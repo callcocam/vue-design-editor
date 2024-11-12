@@ -1,0 +1,51 @@
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos base do plugin */
+@layer components {
+  .de-editor-layout {
+    @apply de-h-screen de-flex de-flex-col de-bg-gray-100;
+  }
+
+  .de-editor-main {
+    @apply de-flex de-flex-1 de-overflow-hidden;
+  }
+
+  .de-editor-sidebar {
+    @apply de-w-72 de-bg-white de-border-r de-border-gray-200;
+  }
+
+  .de-properties-panel {
+    @apply de-w-72 de-bg-white de-border-l de-border-gray-200 de-flex de-flex-col;
+  }
+
+  .de-canvas-container {
+    @apply de-flex-1 de-overflow-hidden de-bg-gray-50;
+  }
+
+  /* Input styles */
+  .de-input {
+    @apply de-w-full de-px-2 de-py-1 de-text-sm de-border de-border-gray-200 de-rounded 
+           de-outline-none focus:de-ring-2 focus:de-ring-blue-500 focus:de-border-transparent;
+  }
+
+  .de-select {
+    @apply de-input de-bg-white;
+  }
+
+  .de-button {
+    @apply de-px-3 de-py-1.5 de-rounded de-text-sm de-font-medium
+           de-transition-colors de-duration-200;
+  }
+
+  .de-button-primary {
+    @apply de-button de-bg-blue-500 de-text-white 
+           hover:de-bg-blue-600 focus:de-ring-2 focus:de-ring-blue-500 focus:de-ring-offset-2;
+  }
+
+  .de-button-danger {
+    @apply de-button de-bg-red-500 de-text-white 
+           hover:de-bg-red-600 focus:de-ring-2 focus:de-ring-red-500 focus:de-ring-offset-2;
+  }
+}
